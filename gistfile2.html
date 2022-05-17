@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        font-family: "Comic Sans MS", "Comic Sans";
+      }
+    </style>
+    <title>LOLOLOLO</title>
+  </head>
+  <body>
+    <h1>uwu</h1>
+    <textarea width="80" height="50" class="input" placeholder="eval_input"></textarea>
+    <textarea width="80" height="50" class="output" placeholder="eval_output"></textarea>
+    <button class="eval">do_deval</button>
+    <script>
+      document.querySelector(".eval").addEventListener("click", () => {
+          document.querySelector(".output").value = eval( document.querySelector(".input").value);
+      })
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>
+      eruda.init();
+    </script>
+  </body>
+</html>
